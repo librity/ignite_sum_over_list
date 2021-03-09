@@ -1,11 +1,11 @@
-defmodule SumOverListTest do
+defmodule FactorialTest do
   use ExUnit.Case
 
   describe "call/1" do
     test "should return the sum of all elements of a list" do
-      list = [1, 2, 3, 4, 5, 6, 7]
-      return = SumOverList.call(list)
-      expected = 28
+      number = 5
+      return = Factorial.compute(number)
+      expected = 120
 
       assert return == expected
     end

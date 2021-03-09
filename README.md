@@ -44,6 +44,10 @@ be found at [https://hexdocs.pm/sum_over_list](https://hexdocs.pm/sum_over_list)
 - https://stackoverflow.com/questions/36730122/elixir-multiple-arguments-with-the-pipe-operator
 - http://www.binarywebpark.com/elixir-pipe-capture-operators/
 
+- https://dino.codes/posts/tail-call-optimization-in-elixir/
+- https://blog.appsignal.com/2019/03/19/elixir-alchemy-recursion.html
+- https://culttt.com/2016/06/06/understanding-recursion-tail-call-optimisation-elixir/
+
 ## Bash Commands
 
 ```bash
@@ -57,6 +61,8 @@ $ iex -S mix
 ## Elixir Commands
 
 ```elixir
->
-
+> SumOverList.call([1, 2, 34, 5])
+42
+> Factorial.compute(6)
+720
 ```
