@@ -1,18 +1,6 @@
 defmodule SumOverList do
-  @moduledoc """
-  Documentation for `SumOverList`.
-  """
+  def call(list), do: sum(list, 0)
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> SumOverList.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  defp sum([], accumulator), do: accumulator
+  defp sum([head | tail], accumulator), do: sum(tail, accumulator + head)
 end
