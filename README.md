@@ -3,31 +3,45 @@
 A demo Elixir program that sums over a list.
 Part of Rocket Seat Ignite, an online Elixir and Phoenix bootcamp.
 
-## Installation
+## Bash Commands
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `sum_over_list` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:sum_over_list, "~> 0.1.0"}
-  ]
-end
+```bash
+$ mix new project_name
+$ mix compile
+$ mix test
+$ mix format
+$ iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/sum_over_list](https://hexdocs.pm/sum_over_list).
+## Elixir Commands
+
+```elixir
+> SumOverList.call([1, 2, 34, 5])
+42
+> Factorial.compute(6)
+720
+> Enum.map(%{a: 1, b: 2}, fn x -> x end)
+[a: 1, b: 2]
+> Enum.map(%{a: 1, b: 2}, fn {key, value} -> {key, value} end)
+[a: 1, b: 2]
+> Enum.map(%{a: 1, b: 2}, fn {_key, value} -> value end)
+[1, 2]
+```
 
 ## Docs
 
 - https://hexdocs.pm/elixir/master/Kernel.html
 - https://hexdocs.pm/elixir/master/Integer.html
 - https://hexdocs.pm/elixir/master/patterns-and-guards.html
+- https://hexdocs.pm/elixir/master/Enum.html
+
+- https://github.com/elixir-lang/ex_doc
+- https://hex.pm/docs/publish
+- https://hexdocs.pm
 
 ## Resources
 
+- https://elixirschool.com/en/lessons/basics/enum/
 - https://elixir-examples.github.io/examples/get-type-of-variable
 - https://github.com/elixir-examples/elixir-examples.github.io
 - https://elixir-examples.github.io/
@@ -47,22 +61,3 @@ be found at [https://hexdocs.pm/sum_over_list](https://hexdocs.pm/sum_over_list)
 - https://dino.codes/posts/tail-call-optimization-in-elixir/
 - https://blog.appsignal.com/2019/03/19/elixir-alchemy-recursion.html
 - https://culttt.com/2016/06/06/understanding-recursion-tail-call-optimisation-elixir/
-
-## Bash Commands
-
-```bash
-$ mix new project_name
-$ mix compile
-$ mix test
-$ mix format
-$ iex -S mix
-```
-
-## Elixir Commands
-
-```elixir
-> SumOverList.call([1, 2, 34, 5])
-42
-> Factorial.compute(6)
-720
-```
